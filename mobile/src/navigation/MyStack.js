@@ -4,24 +4,24 @@ import Settings from "../screens/Settings";
 import Wiki from "../screens/Wiki";
 import { View, Text} from "react-native";
 import { globalStyles } from "../styles/global";
-
+import MyBottomTab, {MyBottonTab} from "./MyBottonTab";
 const HomeStack = createStackNavigator(); 
 
 
 const myConfig = {
   
    // title: 'Feed',
-    headerShown: true,
+    headerShown: false,
    // headerTitleAlign: "center",
     presentation: "modal",
-   // gestureEnabled: true,
- //   animationEnabled: true,
+    gestureEnabled: true,
+    animationEnabled: true,
    // animationTypeForReplace: 'push',
   //  keyboardHandlerEnabled: false,
 
-    header: ({ navigation, route, options, back }) => (
-        <CustomHeader title={route.name} />
-    ),
+   // header: ({ navigation, route, options, back }) => ( <CustomHeader title={route.name} />   ),
+
+
   //  cardStyle: { backgroundColor: 'red' },
 }
 
@@ -41,14 +41,15 @@ export default function MyStack() {
     return (
        
         <HomeStack.Navigator
-            initialRouteName="Home"
+            initialRouteName="MyBottomTab"
            screenOptions={myConfig}
         >
-
-            <HomeStack.Screen name='Home' component={Home} />
-            <HomeStack.Screen name='Settings' component={Settings} options={{ title: "Config", headerShown: true, }} />
-            <HomeStack.Screen name='Wiki' component={Wiki} options={{ title: "Wiki", headerShown: true, }} />
-
+            <HomeStack.Screen name='Root' component={MyBottomTab} />
+            <HomeStack.Group screenOptions={{headerShown: true}}>
+                <HomeStack.Screen name='Home' component={Home} />
+                <HomeStack.Screen name='Settings' component={Settings} options={{ title: "Config"}} />
+                <HomeStack.Screen name='Wiki' component={Wiki} options={{ headerBackTitleVisible:false, headerTitle:" " }} />
+            </HomeStack.Group>
         </HomeStack.Navigator>
          
     );
