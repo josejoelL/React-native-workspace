@@ -46,7 +46,7 @@ export default function MyStack() {
         >
             <HomeStack.Screen name='Root' component={MyBottomTab} />
             <HomeStack.Group screenOptions={{headerShown: true}}>
-                <HomeStack.Screen name='Home' component={Home} />
+                <HomeStack.Screen name='Home' component={Home}  />
                 <HomeStack.Screen name='Settings' component={Settings} options={{ title: "Config"}} />
                 <HomeStack.Screen name='Wiki' component={Wiki} options={{ headerBackTitleVisible:false, headerTitle:" " }} />
             </HomeStack.Group>

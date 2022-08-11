@@ -47,7 +47,7 @@ export default function MyBottomTab () {
                     name="Reels"
                     component={Reels}
 
-
+                   
                 options={{
                     tabBarShowLabel: false,
                     tabBarIcon: ({ color }) => <Octicons name="sun" size={24} color={color} />

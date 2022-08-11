@@ -28,4 +28,10 @@ export const globalStyles = StyleSheet.create({
         justifyContent: 'flex-end',
         alignItems: 'flex-start',
     },
+    cardContainer: {
+        flex: 1,
+        backgroundColor: (200, 200, 200),
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
 });
