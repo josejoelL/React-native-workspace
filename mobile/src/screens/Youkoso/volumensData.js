@@ -1,4 +1,4 @@
-export const volumenYoukoso = [
+export const volumenCOTE = [
     {
         name: "COTE 1",
         desc: "Classroom of the Elite Volumen 1",

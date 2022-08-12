@@ -47,7 +47,12 @@ export default function App() { //componente frame,layout main el container, se 
   return (
     <SafeAreaView style={styles.container}> 
       <ScrollView contentContainerStyle={{marginHorizontal:18}} Style ={{ marginTop:Platform.OS === 'android' && '30' }}>
-      
+      {dogs.map( (dog,index)=> {
+        
+        return(
+          <Card key={index}{...dog} />
+        )
+      })}
       <Card name={"Pinguino que tomo las fotos"}/>
       </ScrollView>
     </SafeAreaView>
