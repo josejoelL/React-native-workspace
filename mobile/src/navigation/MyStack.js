@@ -11,7 +11,7 @@ import Cote6 from "../screens/Youkoso/v6/Cote6";
 import Cote7 from "../screens/Youkoso/v7/Cote7";
 import Cote7_5 from "../screens/Youkoso/v7_5/Cote7_5";
 import Cote8 from "../screens/Youkoso/v8/Cote8";
-import { View, Text} from "react-native";
+import { View, Text,Image } from "react-native";
 import { globalStyles } from "../styles/global";
 import MyBottomTab, {MyBottonTab} from "./MyBottonTab";
 const HomeStack = createStackNavigator(); 
@@ -28,21 +28,30 @@ const myConfig = {
    // animationTypeForReplace: 'push',
   //  keyboardHandlerEnabled: false,
 
-   // header: ({ navigation, route, options, back }) => ( <CustomHeader title={route.name} />   ),
+    
 
 
   //  cardStyle: { backgroundColor: 'red' },
 }
 
-function CustomHeader({ title }) {
+function CustomHeader({image}) {
     return (
         <View
-            style={globalStyles.customHeader}>
-            <Text
-                style={globalStyles.titleHeader}>
-               {title}  
-            </Text>
-        </View>
+            style={{
+                width: 500,
+                height: 300,
+                
+               // padding: 1,
+               //marginTop: 150,
+
+            }} 
+           >
+            <Image
+                style={{ width: '100%', height: 300, borderRadius: 30}}
+                source={{ uri: image }}
+            />
+           
+        </View >
     );
 }
 
@@ -66,7 +75,13 @@ export default function MyStack() {
                 <HomeStack.Screen name='Cote6' component={Cote6} options={{ headerBackTitleVisible: false, headerTitle: " " }} />
                 <HomeStack.Screen name='Cote7' component={Cote7} options={{ headerBackTitleVisible: false, headerTitle: " " }} />
                 <HomeStack.Screen name='Cote7_5' component={Cote7_5} options={{ headerBackTitleVisible: false, headerTitle: " " }} />
-                <HomeStack.Screen name='Cote8' component={Cote8} options={{ headerBackTitleVisible: false, headerTitle: " " }} />
+
+                <HomeStack.Screen name='Cote8' component={Cote8} options={{ headerBackTitleVisible: true, headerTitle: " ", 
+                    header: ({ navigation, route, options, back,image }) => (
+                        <CustomHeader title='COTE 8' image={"https://i.imgur.com/gtA19hm.jpg"} />
+                    ), }}
+                
+                />
 
             </HomeStack.Group>
         </HomeStack.Navigator>

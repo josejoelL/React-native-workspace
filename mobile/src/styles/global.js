@@ -4,14 +4,14 @@ import { Colors } from "../constants/color";
 export const globalStyles = StyleSheet.create({
     ScreenContainer: {
         flex: 1,
-        backgroundColor: Colors.gray,
+        backgroundColor: Colors.light,
         alignItems: "center",
         justifyContent: "center",
     },
     title: {
         fontSize: 24,
         fontWeight: "bold",
-        color: Colors.light,
+        color: 'gray',
     },
     titleHeader: {
         fontSize: 24,
@@ -23,7 +23,7 @@ export const globalStyles = StyleSheet.create({
         //  height: '9.1%',
         width: '100%',
         //  flex: 1,
-        backgroundColor: Colors.dark,
+        backgroundColor: 'white',
         padding: '8.5%',
         justifyContent: 'flex-end',
         alignItems: 'flex-start',

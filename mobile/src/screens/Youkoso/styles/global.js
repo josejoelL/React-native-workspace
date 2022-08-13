@@ -4,14 +4,14 @@ import { Colors } from "../constants/colorY";
 export const globalStyles = StyleSheet.create({
     ScreenContainer: {
         flex: 1,
-        backgroundColor: Colors.gray,
+        backgroundColor: Colors.light,
         alignItems: "center",
         justifyContent: "center",
     },
     title: {
         fontSize: 24,
         fontWeight: "bold",
-        color: Colors.light,
+        color: Colors.dark,
     },
     titleHeader: {
         fontSize: 24,

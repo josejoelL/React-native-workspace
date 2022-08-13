@@ -47,7 +47,9 @@ export default function Home() {
             <ScrollView contentContainerStyle={{ marginHorizontal: 18 }} Style={{ marginTop: Platform.OS === 'android' && '30' }} 
               
             >
-                <Card name={"COTE"} desc={"Classroom of the Elite Volumen 1"} image={"https://i.imgur.com/nvtBf0u.jpg"} id={'Cote1'} />
+                <Text style={globalStyles.title}></Text>
+               
+                <Card name={"COTE"} desc={"Classroom of the Elite Volumen 1"} image={"https://i.imgur.com/nvtBf0u.jpg"} id={'Cote1'} color={'red'}/>
                 <Card name={"COTE"} desc={"Classroom of the Elite Volumen 2"} image={"https://i.imgur.com/uQrcIIh.jpg"} id={'Cote2'} />
                 <Card name={"COTE"} desc={"Classroom of the Elite Volumen 3"} image={"https://i.imgur.com/lVqhukO.jpg"} id={'Cote3'} />
                 <Card name={"COTE"} desc={"Classroom of the Elite Volumen 4"} image={"https://i.imgur.com/vMKf4t7.jpg"} id={'Cote4'} />
@@ -56,24 +58,9 @@ export default function Home() {
                 <Card name={"COTE"} desc={"Classroom of the Elite Volumen 7"} image={"https://i.imgur.com/X6Arrbw.jpg"} id={'Cote7'} />
                 <Card name={"COTE"} desc={"Classroom of the Elite Volumen 7.5"} image={"https://i.imgur.com/XX1wvdA.jpg"} id={'Cote7_5'} />
                 <Card name={"COTE"} desc={"Classroom of the Elite Volumen 8"} image={"https://i.imgur.com/ZHgDj7d.jpg"} id={'Cote8'} />
+                <Text style={globalStyles.title}></Text>
             
-            <Text style={globalStyles.title}> COTE 8</Text>
-            <Button
-                onPress={() => navigation.navigate('PrologoV8')}
-                title='Prologo'
-                style={globalStyles.ScreenContainer}>"PrologoV8"
-            </Button>
-            <Button 
-            onPress={ () => navigation.navigate('Settings') }
-                title='Settings' 
-                style={globalStyles.ScreenContainer}>"Settings" 
-            </Button>
-                <Button
-                onPress={() => navigation.navigate('Wiki')}
-                
-                title='Wiki'
-                style={globalStyles.ScreenContainer}>"Wiki"
-                </Button>
+            
             </ScrollView>
         </View>
     );
