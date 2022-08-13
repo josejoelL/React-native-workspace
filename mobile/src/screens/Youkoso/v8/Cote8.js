@@ -19,7 +19,7 @@ const Card = (props) => {
                 marginTop: 1
                 
             }}
-            onPress={() => navigation.navigate('Wiki')}
+            onPress={() => navigation.navigate(id)}
             >
 
            
@@ -41,8 +41,8 @@ export default function Cote8() {
         <View >
             <ScrollView 
             >
-                <Card name={"Prologo"} desc={"EL MONÓLOGO DE HORIKITA MANABU"} image={""} id={'0'} color={'red'} />
-                <Card name={"cap 1"} desc={"UN NUEVO EXAMEN ESPECIAL - CAMPO DE ENTRENAMIENTO MIXTO"} image={""} id={'0'} color={'red'} />
+                <Card name={"Prologo"} desc={"EL MONÓLOGO DE HORIKITA MANABU"} image={""} id={'PrologoV8'} color={'red'} />
+                <Card name={"cap 1"} desc={"UN NUEVO EXAMEN ESPECIAL - CAMPO DE ENTRENAMIENTO MIXTO"} image={""} id={'PrologoV8'} color={'red'} />
                 <Card name={"cap 2"} desc={"UN NUEVO EXAMEN ESPECIAL - CAMPO DE ENTRENAMIENTO MIXTO"} image={""} id={'0'} color={'red'} />
                 <Card name={"cap 3"} desc={"UN NUEVO EXAMEN ESPECIAL - CAMPO DE ENTRENAMIENTO MIXTO"} image={""} id={'0'} color={'red'} />
                 <Card name={"cap 4"} desc={"UN NUEVO EXAMEN ESPECIAL - CAMPO DE ENTRENAMIENTO MIXTO"} image={""} id={'0'} color={'red'} />

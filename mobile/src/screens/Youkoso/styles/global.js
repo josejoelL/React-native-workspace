@@ -9,9 +9,10 @@ export const globalStyles = StyleSheet.create({
         justifyContent: "center",
     },
     title: {
-        fontSize: 24,
+        fontSize: 20,
         fontWeight: "bold",
         color: Colors.dark,
+        padding: 20,
     },
     titleHeader: {
         fontSize: 24,

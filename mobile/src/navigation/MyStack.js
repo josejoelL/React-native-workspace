@@ -11,6 +11,7 @@ import Cote6 from "../screens/Youkoso/v6/Cote6";
 import Cote7 from "../screens/Youkoso/v7/Cote7";
 import Cote7_5 from "../screens/Youkoso/v7_5/Cote7_5";
 import Cote8 from "../screens/Youkoso/v8/Cote8";
+import PrologoV8 from "../screens/Youkoso/v8/PrologoV8";
 import { View, Text,Image } from "react-native";
 import { globalStyles } from "../styles/global";
 import MyBottomTab, {MyBottonTab} from "./MyBottonTab";
@@ -45,6 +46,7 @@ function CustomHeader({image}) {
                //marginTop: 150,
 
             }} 
+          
            >
             <Image
                 style={{ width: '100%', height: 300, borderRadius: 30}}
@@ -74,14 +76,23 @@ export default function MyStack() {
                 <HomeStack.Screen name='Cote5' component={Cote5} options={{ headerBackTitleVisible: false, headerTitle: " " }} />
                 <HomeStack.Screen name='Cote6' component={Cote6} options={{ headerBackTitleVisible: false, headerTitle: " " }} />
                 <HomeStack.Screen name='Cote7' component={Cote7} options={{ headerBackTitleVisible: false, headerTitle: " " }} />
-                <HomeStack.Screen name='Cote7_5' component={Cote7_5} options={{ headerBackTitleVisible: false, headerTitle: " " }} />
+                <HomeStack.Screen name='Cote7_5' component={Cote7_5} options={{ headerBackTitleVisible: false, headerTitle: " ",  }} />
 
-                <HomeStack.Screen name='Cote8' component={Cote8} options={{ headerBackTitleVisible: true, headerTitle: " ", 
-                    header: ({ navigation, route, options, back,image }) => (
-                        <CustomHeader title='COTE 8' image={"https://i.imgur.com/gtA19hm.jpg"} />
-                    ), }}
+                <HomeStack.Screen name='Cote8' component={Cote8}
+                 options={{
+                    headerShown: true,
+                    headerBackTitleVisible: true, 
+                    headerTitle: " ", 
+                    headerShadowVisible: true,
+                    headerBackAllowFontScaling: true,
+                    
+                     header: ({ navigation, route, options, back, image }) => (
+                         <CustomHeader title='COTE 8' image={"https://i.imgur.com/gtA19hm.jpg"} />
+                     ),
+}}
                 
                 />
+                <HomeStack.Screen name='PrologoV8' component={PrologoV8} options={{ headerBackTitleVisible: false, headerTitle: " ", gestureEnabled: false, }} />
 
             </HomeStack.Group>
         </HomeStack.Navigator>
