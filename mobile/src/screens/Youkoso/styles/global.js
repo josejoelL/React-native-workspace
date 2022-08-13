@@ -14,6 +14,14 @@ export const globalStyles = StyleSheet.create({
         color: Colors.dark,
         padding: 20,
     },
+    titleWiki: {
+        fontSize: 20,
+        fontWeight: "bold",
+        color: Colors.darkBlue,
+        //backgroundColor: "white",
+       // activeOpacity: 0
+        
+    },
     titleHeader: {
         fontSize: 24,
         fontWeight: "bold",

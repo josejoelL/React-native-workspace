@@ -1,12 +1,22 @@
-import { View, Text,ScrollView } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, useState } from 'react-native';
 import { globalStyles } from '../styles/global';
+import { useNavigation } from '@react-navigation/native';
 
 export default function PrologoV8() {
+    const navigation = useNavigation();
     return (
         <View style={globalStyles.ScreenContainer}>
             <ScrollView>
             <Text style={globalStyles.title}> PRÓLOGO </Text>
-            <Text style={globalStyles.title}> EL MONÓLOGO DE HORIKITA MANABU</Text>
+                <Text style={globalStyles.title}>
+                   
+                        <Text style={globalStyles.title}> EL MONÓLOGO DE</Text>
+                  
+                    
+                    <Text style={globalStyles.titleWiki} onPress={() => navigation.navigate('Wiki')}> HORIKITA MANABU</Text>
+                    
+                   
+                </Text>
             <Text style={globalStyles.title}>Hay algunas cosas que la gente encontraría extrañas si se enterara de ello.</Text>
                 <Text style={globalStyles.title}>La verdad es que no elegí esta escuela porque tuviera algo que quisiera llevar a
                     cabo o algo así. </Text>
@@ -20,8 +30,11 @@ export default function PrologoV8() {
                 <Text style={globalStyles.title}>Ser un “modelo a seguir”.Ser “ejemplar”. </Text>
                 <Text style={globalStyles.title}>Creía que eso era lo correcto y nunca lo cuestioné.
  </Text>
-                <Text style={globalStyles.title}>Sin embargo, Nagumo Miyabi emprendió una acción tras otra para oponerse
-                    directamente a mí.
+    <Text style={globalStyles.title}>
+                <Text style={globalStyles.title}>Sin embargo, </Text>
+                    <Text style={globalStyles.titleWiki} onPress={() => navigation.navigate('Wiki')}>Nagumo Miyabi</Text>
+                    <Text style={globalStyles.title}> emprendió una acción tras otra para oponerse
+                    directamente a mí.</Text>
  </Text>
                 <Text style={globalStyles.title}>Una persona que se abre paso, así se puede describir a ese hombre. </Text>
                 <Text style={globalStyles.title}>De hecho, hasta que me graduara, ya había renunciado a la acción. </Text>
