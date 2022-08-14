@@ -31,7 +31,12 @@ import Cap8V8 from "../screens/Youkoso/v8/Cap8V8";
 
 import NagumoMiyabi from "../screens/Youkoso/character/NagumoMiyabi";
 import HorikitaManabu from "../screens/Youkoso/character/HorikitaManabu";
-
+import ChabashiraSae from "../screens/Youkoso/character/ChabashiraSae";
+import IkeKanji from "../screens/Youkoso/character/IkeKanji";
+import MiyakeAkito from "../screens/Youkoso/character/MiyakeAkito";
+import SudouKen from "../screens/Youkoso/character/SudouKen";
+import YamauchiHaruki from "../screens/Youkoso/character/YamauchiHaruki";
+import YukimuraTeruhiko from "../screens/Youkoso/character/YukimuraTeruhiko";
 
 import { View, Text,Image } from "react-native";
 import { globalStyles } from "../styles/global";
@@ -128,7 +133,13 @@ export default function MyStack() {
                     <HomeStack.Screen name='Cap8V8' component={Cap8V8} options={{ headerBackTitleVisible: false, headerTitle: " ", gestureEnabled: false, }} />
 
                 <HomeStack.Screen name='HorikitaManabu' component={HorikitaManabu} options={{ headerBackTitleVisible: true, headerTitle: "ADVANCED NURTURING HIGH SHOOL DATABASE " }} />
-                    <HomeStack.Screen name='NagumoMiyabi' component={NagumoMiyabi} options={{ headerBackTitleVisible: true, headerTitle: "ADVANCED NURTURING HIGH SHOOL DATABASE  " }} />
+                <HomeStack.Screen name='NagumoMiyabi' component={NagumoMiyabi} options={{ headerBackTitleVisible: true, headerTitle: "ADVANCED NURTURING HIGH SHOOL DATABASE  " }} />
+                <HomeStack.Screen name='ChabashiraSae' component={ChabashiraSae} options={{ headerBackTitleVisible: true, headerTitle: "ADVANCED NURTURING HIGH SHOOL DATABASE  " }} />
+                <HomeStack.Screen name='IkeKanji' component={IkeKanji} options={{ headerBackTitleVisible: true, headerTitle: "ADVANCED NURTURING HIGH SHOOL DATABASE  " }} />
+                <HomeStack.Screen name='MiyakeAkito' component={MiyakeAkito} options={{ headerBackTitleVisible: true, headerTitle: "ADVANCED NURTURING HIGH SHOOL DATABASE  " }} />
+                <HomeStack.Screen name='SudouKen' component={SudouKen} options={{ headerBackTitleVisible: true, headerTitle: "ADVANCED NURTURING HIGH SHOOL DATABASE  " }} />
+                <HomeStack.Screen name='YamauchiHaruki' component={YamauchiHaruki} options={{ headerBackTitleVisible: true, headerTitle: "ADVANCED NURTURING HIGH SHOOL DATABASE  " }} />
+                <HomeStack.Screen name='YukimuraTeruhiko' component={YukimuraTeruhiko} options={{ headerBackTitleVisible: true, headerTitle: "ADVANCED NURTURING HIGH SHOOL DATABASE  " }} />
 
             </HomeStack.Group>
         </HomeStack.Navigator>

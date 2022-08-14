@@ -13,6 +13,23 @@ export const globalStyles = StyleSheet.create({
         //fontWeight: "bold",
         color: Colors.dark,
         padding: 20,
+        textAlign: 'justify'
+    },
+    dialog: {
+        fontSize: 18,
+       // fontWeight: "bold",
+        color: 'white',
+       // padding: 20,
+        //backgroundColor: Colors.blue,
+        //borderRadius: 50,
+    },
+    titledialog: {
+        fontSize: 16,
+        fontWeight: "bold",
+        color: 'white',
+        //padding: 30,
+        //backgroundColor: Colors.blue,
+      //  borderRadius: 50,
     },
     titleWiki: {
         fontSize: 20,

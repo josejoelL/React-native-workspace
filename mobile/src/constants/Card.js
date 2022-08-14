@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View, Image, SafeAreaView, ScrollView, Platform } from 'react-native';
 
-const Card = (props) => {
+export const Card = (props) => {
 
     const { name, desc, image, width, height } = props;
 
@@ -14,5 +14,5 @@ const Card = (props) => {
             <Text style={{ fontSize: 28, fontWeight: 'bold' }}>{name}</Text>
             <Text style={{ fontSize: 20, color: 'gray' }}>{desc}</Text>
         </View>
-    )
+    );
 }

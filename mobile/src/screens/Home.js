@@ -4,6 +4,7 @@ import { globalStyles } from '../styles/global';
 import { useNavigation } from '@react-navigation/native';
 import { volumenCOTE } from '../screens/Youkoso/volumensData';
 import { Colors } from '../constants/color';
+
 //import Card from '../constants/Card';
 
 const Card = (props) => {
