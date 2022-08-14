@@ -2,7 +2,7 @@ import { View, Text, ScrollView, TouchableOpacity, useState,Image } from 'react-
 import { globalStyles } from '../styles/global';
 import { useNavigation } from '@react-navigation/native';
 import { Colors } from '../constants/colorY';
-import { T,W } from '../../../constants/Texts';
+import { T,W,D } from '../../../constants/Texts';
 export default function Cap1V8() {
     const navigation = useNavigation();
     return (
@@ -93,6 +93,7 @@ export default function Cap1V8() {
                     <Text style={globalStyles.titleWiki} onPress={() => navigation.navigate('ChabashiraSae')}>Chabashira-sensei </Text>
                      dijo eso a los estudiantes mientras sostenía un
                     micrófono en sus manos.</Text>
+                <D n='ChabashiraSae' t='Siento interrumpir su diversión, pero cálmense.' />    
             </ScrollView>
         </View>
     );
