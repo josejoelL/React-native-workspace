@@ -13,7 +13,7 @@ export default function PrologoV8() {
                         <Text style={globalStyles.title}> EL MONÓLOGO DE</Text>
                   
                     
-                    <Text style={globalStyles.titleWiki} onPress={() => navigation.navigate('Wiki')}> HORIKITA MANABU</Text>
+                    <Text style={globalStyles.titleWiki} onPress={() => navigation.navigate('HorikitaManabu')}> HORIKITA MANABU</Text>
                     
                    
                 </Text>
@@ -32,7 +32,7 @@ export default function PrologoV8() {
  </Text>
     <Text style={globalStyles.title}>
                 <Text style={globalStyles.title}>Sin embargo, </Text>
-                    <Text style={globalStyles.titleWiki} onPress={() => navigation.navigate('Wiki')}>Nagumo Miyabi</Text>
+                    <Text style={globalStyles.titleWiki} onPress={() => navigation.navigate('NagumoMiyabi')}>Nagumo Miyabi</Text>
                     <Text style={globalStyles.title}> emprendió una acción tras otra para oponerse
                     directamente a mí.</Text>
  </Text>
