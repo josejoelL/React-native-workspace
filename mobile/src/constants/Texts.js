@@ -25,9 +25,10 @@ export const D = (props) => {
     let name = n;
     let pfp =  pfps.find(x => x.name === name )
     return (
-        <View style={{ flex: 0.001, padding: 20, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', backgroundColor: Colors.gray, borderRadius: 10 }}>
+        <View style={{ flex: 0.001, padding: 50, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', backgroundColor: Colors.gray, borderRadius: 10 }}>
+            
             <Image
-                style={{ width: 50, height: 50, borderRadius: 100, padding: 20, }}
+                style={{ width: 60, height: 60, borderRadius: 100, padding: 20, justifyContent: 'center', alignItems: 'center' }}
                 source={ {uri: pfp.image} }>
             </Image>
             

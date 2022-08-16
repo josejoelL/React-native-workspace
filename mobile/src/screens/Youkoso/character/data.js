@@ -10,12 +10,18 @@ export const pfps = [
         nick: "Horikita Manabu",
         desc: "Ex presidente del consejo estudiantil del 3er año",
         image: " "
+    }, 
+    {
+        name: "HorikitaSuzune",
+        nick: "Horikita",
+        desc: "1-D",
+        image: "https://i.imgur.com/XKoxMm0.png"
     },
     {
         name: "IkeKanji",
         nick: "Kanji",
         desc: "1-D",
-        image: " "
+        image: "https://i.imgur.com/CUZWknk.png"
     },
     {
         name: "MiyakeAkito",
@@ -33,13 +39,13 @@ export const pfps = [
         name: "SudouKen",
         nick: "Sudou",
         desc: "1-D",
-        image: " "
+        image: "https://i.imgur.com/9FJugQU.png"
     },
     {
         name: "YamauchiHaruki",
         nick: "Yamauchi",
         desc: "1-D",
-        image: " "
+        image: "https://i.imgur.com/4DHB82D.png"
     },
     {
         name: "YukimuraTeruhiko",
@@ -51,12 +57,12 @@ export const pfps = [
         name: "KatsuragiKouhei",
         nick: "Katsuragi",
         desc: "1-A",
-        image: " "
+        image: "https://i.imgur.com/V1XapV0.png"
     }, {
         name: "AyanokoujiKiyotaka",
         nick: "Ayanokouji",
         desc: "1-D",
-        image: " "
+        image: "https://i.imgur.com/DZWC0qh.png"
     }, {
         name: "KanzakiRyuuji",
         nick: "Kanzaki",
@@ -66,7 +72,7 @@ export const pfps = [
         name: "RyuuenKakeru",
         nick: "Ryuuen",
         desc: "1-D",
-        image: " "
+        image: "https://i.imgur.com/KbhFMtW.png"
     }, {
         name: "HirataYousuke",
         nick: "Hirata",

@@ -19,6 +19,7 @@ export const globalStyles = StyleSheet.create({
         fontSize: 18,
        // fontWeight: "bold",
         color: 'white',
+        textAlign: 'justify'
        // padding: 20,
         //backgroundColor: Colors.blue,
         //borderRadius: 50,

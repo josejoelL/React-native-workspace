@@ -84,6 +84,17 @@ export default function Cap1V8() {
                      dijo eso a los estudiantes mientras sostenía un
                     micrófono en sus manos.</Text>
                
+
+                <D n='ChabashiraSae' t='Pensé que les gustaría saber adónde va este autobús y qué haremos entonces.'/>
+                <D n='IkeKanji' t='Por supuesto que tenemos curiosidad sobre eso. No me dirá que es la isla deshabitada otra vez, ¿verdad?'/>  
+                <T e=' Recibiendo la queja de Ike, contestó Chabashira-sensei-sensei.' />   
+                <D n='ChabashiraSae' t='Parece que lo que pasó en la isla deshabitada es difícil de olvidar para ustedes, ya que se quedó en su memoria. Pero cálmense. Un examen de esa escala no es algo que se pueda hacer con frecuencia. Significa que no somos tan crueles como para forzarlos a hacerlo ahora que el verano ha terminado para ustedes. Sin embargo, como ya habrán adivinado, se realizará un nuevo examen especial. Su nivel de vida será extremadamente alto comparado con el de una isla deshabitada.'/> 
+                <T e='Ella dijo eso, pero no es algo particularmente digno de confianza. Dejando de lado la isla deshabitada, hasta ahora ha habido exámenes especiales que los estudiantes comunes habrían considerado difíciles. Lo más importante es que el estudiante se verá obligado a enfrentarse directamente a la amenaza conocida como expulsión que se esconde detrás de los exámenes especiales.'/> 
+                <D n='ChabashiraSae' t='¡El examen especial que se les exigirá a los estudiantes de clase D a partir de ahora es…!'/> 
+                <T e='Llegó tan lejos y sin embargo Chabashira-sensei-sensei dejó de hablar. En ese momento, mis compañeros de clase sonreían con orgullo.'/>
+                <T e='Inmediatamente después, Chabashira-sensei-sensei inclinó la cabeza con respeto y se disculpó.'/>
+                <D n='ChabashiraSae' t='Mis disculpas. Ya son estudiantes de la clase C. Ahora bien, ya que han sido ascendidos, les explicaré los detalles de los exámenes especiales.'/>
+
             </ScrollView>
         </View>
     );
