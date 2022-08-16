@@ -75,25 +75,15 @@ export default function Cap1V8() {
                  se movió.</Text>
                 <Text style={globalStyles.title}>Al mismo tiempo, el dolor en mi oído aumentó.
 </Text>
-
-           
-                <View style={{flex:0.001, padding: 20, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', backgroundColor: Colors.gray, borderRadius: 10 }}>
-                <Image 
-                        style={{ width: 50, height: 50, borderRadius: 100, padding: 20, }}
-                source={{uri: 'https://i.imgur.com/txi8RZY.png' }}></Image>
-                    <View style={{ padding: 20, flexDirection: 'rowflex-start', justifyContent: 'flex-start', alignItems: 'flex-start' }}>
-                        <Text style={globalStyles.titledialog}>Chabashira-sensei </Text>
-                        <Text style={globalStyles.dialog}>Siento interrumpir su diversión, pero cálmense.</Text>
-
-                    </View>
-                    </View>
-
+              
+                <D n='ChabashiraSae' t='Siento interrumpir su diversión, pero cálmense.' />   
+                
                     
                 <Text style={globalStyles.title}>
                     <Text style={globalStyles.titleWiki} onPress={() => navigation.navigate('ChabashiraSae')}>Chabashira-sensei </Text>
                      dijo eso a los estudiantes mientras sostenía un
                     micrófono en sus manos.</Text>
-                <D n='ChabashiraSae' t='Siento interrumpir su diversión, pero cálmense.' />    
+               
             </ScrollView>
         </View>
     );

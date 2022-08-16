@@ -8,7 +8,7 @@ export default function RootNavigator(){
      
         <NavigationContainer>  
            
-           <MyDrawer > <MyStack></MyStack> </MyDrawer>
+           <MyDrawer > </MyDrawer>
 
         </NavigationContainer>
       

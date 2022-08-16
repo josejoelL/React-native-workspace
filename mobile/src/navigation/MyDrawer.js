@@ -8,7 +8,16 @@ export default function MyDrawer() {
     return(
         <Drawer.Navigator>
 
-            <Drawer.Screen name='Estudiantes' component={MyStack} options={{ headerShown:false,drawerPosition:0,}} />
+            <Drawer.Screen name='Estudiantes' component={MyStack} 
+            options={{ 
+            headerShown:false,
+            drawerPosition:'right',
+            //drawerActiveBackgroundColor:'#FFFFFF',
+            drawerHideStatusBarOnOpen: false,
+            drawerType:"slide",
+            gestureEnabled: false,
+            }} 
+            />
         </Drawer.Navigator>
 
     );

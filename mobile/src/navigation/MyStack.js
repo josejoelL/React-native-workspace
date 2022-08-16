@@ -41,7 +41,7 @@ import YukimuraTeruhiko from "../screens/Youkoso/character/YukimuraTeruhiko"
 import { View, Text,Image, Pressable } from "react-native";
 import { globalStyles } from "../styles/global";
 import MyBottomTab, {MyBottonTab} from "./MyBottonTab";
-import MyDrawer from "./MyDrawer";
+
 import { useNavigation } from '@react-navigation/native';
 
 import { Octicons } from '@expo/vector-icons';
@@ -139,7 +139,7 @@ export default function MyStack() {
                         headerRight: () => {
                             return (<Pressable style={{ padding: 10, }} onPress={() => navigation.openDrawer()
 } >
-                                <Octicons name="id-badge" size={24} color='lightBlue' />
+                                <Octicons name="id-badge" size={24} color='black' />
                                 </Pressable>);
                            
                         }
