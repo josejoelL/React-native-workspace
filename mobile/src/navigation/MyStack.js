@@ -36,11 +36,16 @@ import IkeKanji from "../screens/Youkoso/character/IkeKanji";
 import MiyakeAkito from "../screens/Youkoso/character/MiyakeAkito";
 import SudouKen from "../screens/Youkoso/character/SudouKen";
 import YamauchiHaruki from "../screens/Youkoso/character/YamauchiHaruki";
-import YukimuraTeruhiko from "../screens/Youkoso/character/YukimuraTeruhiko";
+import YukimuraTeruhiko from "../screens/Youkoso/character/YukimuraTeruhiko"
 
-import { View, Text,Image } from "react-native";
+import { View, Text,Image, Pressable } from "react-native";
 import { globalStyles } from "../styles/global";
 import MyBottomTab, {MyBottonTab} from "./MyBottonTab";
+import MyDrawer from "./MyDrawer";
+import { useNavigation } from '@react-navigation/native';
+
+import { Octicons } from '@expo/vector-icons';
+import { Colors } from "../constants/color";
 const HomeStack = createStackNavigator(); 
 
 
@@ -84,17 +89,16 @@ function CustomHeader({image}) {
 }
 
 export default function MyStack() {
+    const navigation = useNavigation();
     return (
        
         <HomeStack.Navigator
             initialRouteName="MyBottomTab"
            screenOptions={myConfig}
         > 
-             <HomeStack.Group screenOptions={{ headerShown: true }}>
-                
-                </HomeStack.Group>
 
                 <HomeStack.Screen name='Root' component={MyBottomTab} />
+                
                 <HomeStack.Group screenOptions={{headerShown: true}}>
                     <HomeStack.Screen name='Home' component={Home}  />
                     <HomeStack.Screen name='Settings' component={Settings} options={{ title: "Config"}} />
@@ -122,8 +126,27 @@ export default function MyStack() {
                             <CustomHeader title='COTE 8' image={"https://i.imgur.com/gtA19hm.jpg"} />
                         ),
                     }} />
-                    <HomeStack.Screen name='PrologoV8' component={PrologoV8} options={{ headerBackTitleVisible: false, headerTitle: " ", gestureEnabled: false, }} />
-                    <HomeStack.Screen name='Cap1V8' component={Cap1V8} options={{ headerBackTitleVisible: false, headerTitle: " ", gestureEnabled: false, }} />
+
+                    <HomeStack.Screen name='PrologoV8' component={PrologoV8} options={{ headerBackTitleVisible: false, headerTitle: " ", gestureEnabled: false,
+                         }} />
+                    <HomeStack.Screen name='Cap1V8' component={Cap1V8} 
+                    options={{ 
+                        headerBackTitleVisible: true,
+                         headerTitle: "cap 1",
+                          gestureEnabled: true, 
+                      
+
+                        headerRight: () => {
+                            return (<Pressable style={{ padding: 10, }} onPress={() => navigation.openDrawer()
+} >
+                                <Octicons name="id-badge" size={24} color='lightBlue' />
+                                </Pressable>);
+                           
+                        }
+                    }}
+                   
+                    
+                    />
                     <HomeStack.Screen name='Cap2V8' component={Cap2V8} options={{ headerBackTitleVisible: false, headerTitle: " ", gestureEnabled: false, }} />
                     <HomeStack.Screen name='Cap3V8' component={Cap3V8} options={{ headerBackTitleVisible: false, headerTitle: " ", gestureEnabled: false, }} />
                     <HomeStack.Screen name='Cap4V8' component={Cap4V8} options={{ headerBackTitleVisible: false, headerTitle: " ", gestureEnabled: false, }} />
