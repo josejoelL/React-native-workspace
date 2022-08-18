@@ -13,13 +13,13 @@ export const globalStyles = StyleSheet.create({
         //fontWeight: "bold",
         color: Colors.dark,
         padding: 20,
-        textAlign: 'justify'
+       
     },
     dialog: {
         fontSize: 18,
        // fontWeight: "bold",
         color: 'white',
-        textAlign: 'justify'
+        textAlign: 'left',
        // padding: 20,
         //backgroundColor: Colors.blue,
         //borderRadius: 50,

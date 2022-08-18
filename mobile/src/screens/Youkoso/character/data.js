@@ -1,5 +1,11 @@
 export const pfps = [
     {
+        name: "Undefined",
+        nick: " ",
+        desc: " ",
+        image: " "
+    },
+    {
         name: "ChabashiraSae",
         nick: "Chabashira sensei",
         desc: "Profesora de la clase D primer año",

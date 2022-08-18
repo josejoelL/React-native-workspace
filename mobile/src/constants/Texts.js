@@ -22,6 +22,7 @@ export const W = (props) => {
 }
 export const D = (props) => {
     const { n, t } = props;
+   
     let name = n;
     let pfp =  pfps.find(x => x.name === name )
     return (
@@ -29,11 +30,11 @@ export const D = (props) => {
             
             <Image
                 style={{ width: 60, height: 60, borderRadius: 100, padding: 20, justifyContent: 'center', alignItems: 'center' }}
-                source={ {uri: pfp.image} }>
+                source={     {uri: pfp.image}     }>
             </Image>
             
             <View style={{ padding: 20, flexDirection: 'rowflex-start', justifyContent: 'flex-start', alignItems: 'flex-start' }}>
-                <Text style={globalStyles.titledialog}>{pfp.nick}</Text>
+                <Text style={globalStyles.titledialog}>{ pfp.nick }</Text>
                 <Text style={globalStyles.dialog}>{t}</Text>
             </View>
         </View>
