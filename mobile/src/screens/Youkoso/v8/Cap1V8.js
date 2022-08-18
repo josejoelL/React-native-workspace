@@ -430,9 +430,9 @@ Sexto lugar: 20.000 puntos privados. 5 puntos de clase.' />
                 <T e='Realmente no es algo que uno quisiera decir sobre sí mismo.' />
                 <T e='Por eso me gustaría que Kushida me ayudara como sublíder. ¿Qué dices?' />
                 <T e='Horikita le dijo a Kushida, que se movió hacia delante.' />
-                <D n='Kushida' t='¿Seré de utilidad?' />
+                <D n='KushidaKikyou' t='¿Seré de utilidad?' />
                 <D n='HorikitaSuzune' t='Por supuesto que lo serás. Confían en ti más que en nadie en esta clase.' />
-                <D n='Kushida' t='Umm......ok. Si estás de acuerdo conmigo, entonces voy a ayudar.' />
+                <D n='KushidaKikyou' t='Umm......ok. Si estás de acuerdo conmigo, entonces voy a ayudar.' />
                 <D n='HorikitaSuzune' t='Gracias. Ahora será mucho más fácil para las demás personas pedir una opinión. Si les resulta difícil hablar conmigo directamente, no me importa que lo hagan a través de Kushida. Responderé a cualquier consulta, no importa lo trivial que sea.' />
                 <T e='Dejando de lado hasta qué punto Kushida es digna de confianza, es un hecho inequívoco que éste es el mejor planteamiento en este momento.' />
                 <T e='Debido a las reglas de este examen, es considerablemente difícil que los chicos y chicas se involucren en los asuntos de los otros.' />
@@ -447,100 +447,27 @@ Sexto lugar: 20.000 puntos privados. 5 puntos de clase.' />
                 <T e='Por lo tanto, como era de esperar, la única que puedo usar es Kei.' />
                 <T e='Pero no puedo forzar a Kei a hacer que vea a todo el grupo sola.' />
                 <T e='Envié los hechos esenciales al teléfono de Kei.' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
-                <T e='' />
+                <T e='El correo llegó e inmediatamente fue visto por Kei, quien respondió con un correo en blanco.' />
+                <T e='Los chicos y chicas estarán peleando una batalla mientras están separados por un largo período de tiempo.' />
+                <T e='Un examen especial único está a punto de comenzar y parece que asumió instantáneamente que me pondría en contacto con ella.' />
+                <T e='La propia Kei podría querer un consejo ahora mismo.' />
+                <T e='Teniendo en cuenta el sistema de liderazgo y responsabilidad compartida, no es imposible pensar que hasta Kei pueda convertirse en un sacrificio' />
+                <T e='En cuanto a su actitud durante las clases y sus resultados en los exámenes, no puedo decir que a Kei le vaya bien, ni siquiera como halago.' />
+                <T e='Por eso le enseñaré a protegerse.' />
+                <T e='No es algo que todos los estudiantes puedan lograr, pero es una manera de reducir el riesgo, aunque sea un poco.' />
+                <T e='En cuanto a mí, en realidad no podría importarme menos el examen especial que se llevará a cabo.' />
+                <T e='No tengo intención de ejecutar estrategias ganadoras. Sólo voy a superarlo con éxito.' />
+                <T e='Aun así, al igual que le estoy dando consejos a Kei, eso no significa que no vaya a hacer ningún movimiento.' />
+                <T e='El peor de los casos en el examen especial sería si ocurren expulsiones múltiples que en la clase C.' />
+                <T e='Y es imposible proteger perfectamente a toda la clase por mí mismo.' />
+                <T e='Tengo que reducir la cantidad de gente que necesito proteger.' />
+                <T e='En resumen, aparte de mí, me gustaría proteger a Kei, que finalmente se ha convertido en un cómplice prominente, así como a Hirata.' />
+                <T e='A continuación, considerando mi participación con el consejo estudiantil, tendré que asegurarme de que Horikita también sobreviva.' />
+                <T e='También están mis amigos Keisei, Akito, Haruka y Airi. Es sólo que, aunque deseo que se queden, no estarán bajo mi protección. Sin embargo, como amigo, definitivamente rezaré para que no sean expulsados.' />
+                <T e='Aunque no habrá muchas oportunidades para que todos los años escolares se reúnan, debería estar bien si me quedo a vigilar los movimientos de Nagumo.' />
+                <T e='No tengo ningún interés en las escaramuzas que ocurrirán a mi alrededor.' />
+                <T e='El autobús abandonó la carretera y comenzó a ascender gradualmente por el camino montañoso que hasta cierto punto está pavimentado. Me pregunto si se ha convertido en una costumbre para nosotros ir al mar o a ríos o lugares rodeados de naturaleza cada vez que salimos de la escuela.' />
 
-
-            
-            
             </ScrollView>
         </View>
     );

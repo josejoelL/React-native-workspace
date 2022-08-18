@@ -6,6 +6,12 @@ export const pfps = [
         image: " "
     },
     {
+        name: "KushidaKikyou",
+        nick: "Kushida",
+        desc: "1-D",
+        image: " "
+    },
+    {
         name: "ChabashiraSae",
         nick: "Chabashira sensei",
         desc: "Profesora de la clase D primer año",
