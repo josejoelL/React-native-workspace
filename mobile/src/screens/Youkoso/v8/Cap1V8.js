@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, TouchableOpacity, useState,Image } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, useState,Image, FlatList } from 'react-native';
 import { globalStyles } from '../styles/global';
 import { useNavigation } from '@react-navigation/native';
 import { Colors } from '../constants/colorY';
@@ -7,7 +7,7 @@ export default function Cap1V8() {
     const navigation = useNavigation();
     return (
         <View style={globalStyles.ScreenContainer}>
-            <ScrollView>
+            <FlatList>
                
                 <T e='CAPÍTULO 1'/>
                 <T e='UN NUEVO EXAMEN ESPECIAL - CAMPO DE ENTRENAMIENTO MIXTO' />
@@ -468,7 +468,7 @@ Sexto lugar: 20.000 puntos privados. 5 puntos de clase.' />
                 <T e='No tengo ningún interés en las escaramuzas que ocurrirán a mi alrededor.' />
                 <T e='El autobús abandonó la carretera y comenzó a ascender gradualmente por el camino montañoso que hasta cierto punto está pavimentado. Me pregunto si se ha convertido en una costumbre para nosotros ir al mar o a ríos o lugares rodeados de naturaleza cada vez que salimos de la escuela.' />
 
-            </ScrollView>
+            </FlatList>
         </View>
     );
 }
