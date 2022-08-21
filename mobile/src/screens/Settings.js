@@ -6,17 +6,19 @@ import { globalStyles } from '../styles/global';
 // i prefer to use onfly text with css style and loke ring bot 10 pulls to score
 //recomend of the creador is give them each time a lite bit of the tiitle
 
-export default function Settings() {
     
-    fetch('https://animechan.vercel.app/api/random')
-    .then(response => response.json())
-    .then(quote => console.log(quote))
+   
+
+
+export default function Settings() {
+
+    let requestSent = fetch('https://animechan.vercel.app/api/random');
+    
 
 
     return (
         <View style={globalStyles.ScreenContainer}>
-            <Text style={globalStyles.title}> Anime quiz </Text>
-            
+            <Text style={globalStyles.title}> {requestSent} </Text>
 
 
         </View>
