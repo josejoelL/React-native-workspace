@@ -16,6 +16,7 @@ export default function MyDrawer() {
             drawerHideStatusBarOnOpen: false,
             drawerType:"slide",
             gestureEnabled: false,
+            numColumns: 2,
             }} 
             />
         </Drawer.Navigator>

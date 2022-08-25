@@ -74,7 +74,7 @@ export default function MyBottomTab () {
 
                 options={{
                     tabBarShowLabel: false,
-                    tabBarIcon: ({ color }) => <Octicons name="circle" size={24} color={color} />
+                    tabBarIcon: ({ color }) => <Octicons name="id" size={24} color={color} />
                 }}  
                 />
             </MyTab.Navigator>

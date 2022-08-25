@@ -9,9 +9,9 @@ import { globalStyles } from '../styles/global';
 async function getAnimeQuote() {
 
 
-    const res = await fetch('https://animechan.vercel.app/api/random')
-    // .then(response => response.json())
-    //  .then(quote => console.log(quote));
+        const res = await fetch('https://animechan.vercel.app/api/random')
+        // .then(response => response.json())
+        //  .then(quote => console.log(quote));
     if (!res.ok) {
         let vasio = 'Error: ' + res.status + ' ' + res.statusText;
         console.log(vasio);
