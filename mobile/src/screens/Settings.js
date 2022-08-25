@@ -9,9 +9,10 @@ import {useFetch} from '../hooks/useFetch';
     
 export default function Settings() {
   const {isLoading, error, responseJSON} = useFetch(url);
+  
    return (
         <View style={globalStyles.ScreenContainer}>
-            <Text style={globalStyles.title}> {JSON.stringify(responseJSON)}</Text> 
+            <Text > {JSON.stringify(responseJSON)} </Text> 
 
 
         </View>

@@ -1,13 +1,4 @@
-import { useEffect, useReducer, useState } from "react";
-
-
-    /*
-    const [state, setState] = useState();
-    const [error, setError] = useState();
-    const [data, setData] = useState();
-    const [loading, setLoading] = useState(true);
-    */
-   
+import { useEffect, useReducer } from "react";
 
    function reducer(state, {type, ResponseJSON, error}) { 
     switch (type) {
@@ -37,17 +28,18 @@ export function useFetch (url) {
         });
     useEffect(() =>{
 
-        const callFetch = async = () => {
+        const callFetch = async () => {
                 let shouldCancel = false;
 
                 dispatch({type: 'loading'});
                 try {
-                    const response = await fetch(url);
+                    const response = await fetch(url).then(response => response.json()).then(quote => console.log(quote));
 
                     const ResponseJSON = await response.json();
+                    
                     if (shouldCancel) return;
                     dispatch({type: 'success',ResponseJSON});
-
+                   
                 }catch(error) {
                     if (shouldCancel) return;
                     dispatch({type: 'error',error});
