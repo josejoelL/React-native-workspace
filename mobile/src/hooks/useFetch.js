@@ -33,10 +33,10 @@ export function useFetch (url) {
 
                 dispatch({type: 'loading'});
                 try {
-                    const response = await fetch(url).then(response => response.json()).then(quote => console.log(quote));
-
+                    const response = await fetch(url);
+                   
                     const ResponseJSON = await response.json();
-                    
+                    console.log(ResponseJSON);
                     if (shouldCancel) return;
                     dispatch({type: 'success',ResponseJSON});
                    
@@ -50,5 +50,6 @@ export function useFetch (url) {
         return () => (shouldCancel = true);
 
     },  [])
+    console.log(state);
     return state;
 }
