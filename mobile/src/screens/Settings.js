@@ -1,13 +1,17 @@
 import * as React from 'react';
 import { View, Text } from 'react-native';
 import { globalStyles } from '../styles/global';
-    let uri ='https://animechan.vercel.app/api/random'
-    let uriNaruto = "https://animechan.vercel.app/api/quotes/anime?title=naruto"
+import {useFetch} from '../hooks/useFetch';
+    let url ='https://animechan.vercel.app/api/random'
+    let urlNaruto = "https://animechan.vercel.app/api/quotes/anime?title=naruto"
+
+
+    
 export default function Settings() {
-  
+  const {isLoading, error, responseJSON} = useFetch(url);
    return (
         <View style={globalStyles.ScreenContainer}>
-            <Text style={globalStyles.title}> a </Text>
+            <Text style={globalStyles.title}> {JSON.stringify(responseJSON)}</Text> 
 
 
         </View>
