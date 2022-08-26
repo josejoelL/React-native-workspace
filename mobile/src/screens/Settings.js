@@ -2,6 +2,7 @@ import * as React from 'react';
 import { View, Text } from 'react-native';
 import { globalStyles } from '../styles/global';
 import {useFetch} from '../hooks/useFetch';
+import { T } from '../constants/Texts';
     let url ='https://animechan.vercel.app/api/random'
     let urlNaruto = "https://animechan.vercel.app/api/quotes/anime?title=naruto"
 // import useSRW from 'srw'; me falta yarn add swr y ver la parte del add
@@ -10,7 +11,8 @@ import {useFetch} from '../hooks/useFetch';
 export default function Settings() {
   const {isLoading, error, ResponseJSON} = useFetch(url);
     console.log({ResponseJSON});
-    
+    if (isLoading) return <T e='Loading...' />;
+    if (error) return <T e='wait in other hours...' />;
    return (
         <View style={globalStyles.ScreenContainer}>
             <Text > {JSON.stringify(ResponseJSON)} </Text> 
