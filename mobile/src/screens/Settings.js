@@ -10,32 +10,37 @@ import { T } from '../constants/Texts';
 //
     
 export default function Settings() {
-    const { isLoading, error, ResponseJSON } = useFetch(url);
+    const { isLoading, error, ResponseJSON } = useFetch(urlNaruto);
     //console.log({ResponseJSON});
    let animechan = JSON.parse(JSON.stringify(ResponseJSON))
-   console.log( "anime : "+animechan.anime );
-    console.log("personaje : " +animechan.character);
+   //console.log( "anime : "+animechan.anime );
+    //console.log("personaje : " +animechan.character);
     if (isLoading) return <T e='Loading...' />;
     if (error) return <T e='wait in other hours...' />;
 
    return (
         <View style={globalStyles.container}>
-        <Text style={globalStyles.title}> {animechan.anime} </Text>
-        <Text style={globalStyles.title}> {animechan.character} </Text>
-       <Text style={globalStyles.title}> {animechan.quote } </Text>
+        <Text style={globalStyles.title}> {animechan[1].anime} </Text>
+        <Text></Text>
+           <Text style={globalStyles.title}> {animechan[1].character} </Text>
+           <Text style={globalStyles.title}> {animechan[1].quote} </Text>
+           <Text></Text>
+           <Text style={globalStyles.title}> {animechan[2].character} </Text>
+           <Text style={globalStyles.title}> {animechan[2].quote} </Text>
        
         </View>
     );
 }
 
 /*  
-
+   
+ 
  <FlatList
-           data={responseJSON.anime}
-           renderItem={({ item }) => <Text>{item} </Text>}
-           keyExtractor={item => item.character }
-        />
+               data={{ResponseJSON}}
+               renderItem={( item ) => <Text style={globalStyles.title}>{item} </Text>}
+            keyExtractor={item => item.anime }
 
+        />
 
 
   React.useEffect(() => {
