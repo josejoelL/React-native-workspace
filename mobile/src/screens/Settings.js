@@ -19,35 +19,17 @@ export default function Settings() {
     //console.log("personaje : " +animechan.character);
     if (isLoading) return <T e='Loading...' />;
     if (error) return <T e='wait in other hours...' />;
-
+        // crear un componente --> 
    return (
   
         <View style={globalStyles.container}>
-           <Text style={globalStyles.title}> {ResponseJSON[1].anime} </Text>
+           <Text style={globalStyles.title}> {ResponseJSON[1].quote} </Text>
         <Text></Text>
-           <Text style={globalStyles.title}> {ResponseJSON[1].character} </Text>
-           <Text > {animechan[1].quote} </Text>
-           <Text></Text>
-           <Text style={globalStyles.title}> {animechan[2].character} </Text>
-           <Text > {animechan[2].quote} </Text>
-               <Text></Text>
-               <Text style={globalStyles.title}> {ResponseJSON[3].character} </Text>
-               <Text > {animechan[3].quote} </Text>
-               <Text></Text>
-               <Text style={globalStyles.title}> {animechan[4].character} </Text>
-               <Text > {animechan[4].quote} </Text>
-               <Text></Text>
-               <Text style={globalStyles.title}> {ResponseJSON[5].character} </Text>
-               <Text > {animechan[5].quote} </Text>
-               <Text></Text>
-               <Text style={globalStyles.title}> {animechan[6].character} </Text>
-               <Text > {animechan[6].quote} </Text>
-               <Text></Text>
-               <Text style={globalStyles.title}> {ResponseJSON[7].character} </Text>
-               <Text > {animechan[7].quote} </Text>
-               <Text></Text>
-               <Text style={globalStyles.title}> {animechan[8].character} </Text>
-               <Text > {animechan[8].quote} </Text>
+            <Text style={globalStyles.title}> {ResponseJSON[1].character} </Text>
+            <Text style={globalStyles.title}> {ResponseJSON[2].character} </Text>
+            <Text style={globalStyles.title}> {ResponseJSON[3].character} </Text>
+            <Text style={globalStyles.title}> {ResponseJSON[4].character} </Text>
+            
 
         </View>
        
