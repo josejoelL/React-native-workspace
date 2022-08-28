@@ -11,9 +11,7 @@ let urlNaruto = "https://animechan.vercel.app/api/quotes/anime?title=naruto";
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
-function sampleFunction(urlNaruto) {
-    urlNaruto.reload();
-}
+
 export default function Settings() {
     let page = '&page=';
     let random = page.concat(getRandomInt(200)+1);
@@ -38,15 +36,16 @@ export default function Settings() {
            <Button title={ResponseJSON[1].character}/> 
            <Button title={ResponseJSON[2].character} /> 
            <Button title={ResponseJSON[3].character} /> 
-           <Button title={ResponseJSON[4].character} /> 
-           <Button title='try again' onPress={sampleFunction(urlNaruto)}/>  
+           <Button title={ResponseJSON[4].character} />  
         </View>
        
     );
 }
 
 /*  
-   
+    test your knolege in the serie of naruto
+   10/10 you are an expert in naruto
+   0/10 you definetly havent seen naruto
  
  <FlatList
                data={{ResponseJSON}}
