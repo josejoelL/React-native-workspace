@@ -4,15 +4,22 @@ import { globalStyles } from '../styles/global';
 import {useFetch} from '../hooks/useFetch';
 import { T } from '../constants/Texts';
 let url = 'https://animechan.vercel.app/api/random';
-let urlNaruto = "https://animechan.vercel.app/api/quotes/anime?title=naruto&page=2";
-let page = '&page=1';
-let random = '1';
+
 // import useSRW from 'srw'; me falta yarn add swr y ver la parte del add
 //const { data, error } = useSRW(url, fetch(url).then(response => response.json()));
 //mis sueños derrumbados, solo existen 10 por anime y siempre son los mismos 
-    
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 export default function Settings() {
-    const { isLoading, error, ResponseJSON } = useFetch(urlNaruto);
+    let page = '&page=';
+    let random = page.concat(getRandomInt(200)+1);
+    let urlNaruto = "https://animechan.vercel.app/api/quotes/anime?title=naruto";
+    
+
+
+
+    const { isLoading, error, ResponseJSON } = useFetch(urlNaruto.concat(random));
     //console.log({ResponseJSON});
    let animechan = JSON.parse(JSON.stringify(ResponseJSON))
    //console.log( "anime : "+animechan.anime );
