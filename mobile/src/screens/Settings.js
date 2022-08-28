@@ -1,20 +1,23 @@
 import * as React from 'react';
-import { View, Text,FlatList,Scrollview } from 'react-native';
+import { View, Text,FlatList,Scrollview,Button } from 'react-native';
 import { globalStyles } from '../styles/global';
 import {useFetch} from '../hooks/useFetch';
 import { T } from '../constants/Texts';
 let url = 'https://animechan.vercel.app/api/random';
-
+let urlNaruto = "https://animechan.vercel.app/api/quotes/anime?title=naruto";
 // import useSRW from 'srw'; me falta yarn add swr y ver la parte del add
 //const { data, error } = useSRW(url, fetch(url).then(response => response.json()));
 //mis sueños derrumbados, solo existen 10 por anime y siempre son los mismos 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
+function sampleFunction(urlNaruto) {
+    urlNaruto.reload();
+}
 export default function Settings() {
     let page = '&page=';
     let random = page.concat(getRandomInt(200)+1);
-    let urlNaruto = "https://animechan.vercel.app/api/quotes/anime?title=naruto";
+  
     
 
 
@@ -31,13 +34,12 @@ export default function Settings() {
   
         <View style={globalStyles.container}>
            <Text style={globalStyles.title}> {ResponseJSON[1].quote} </Text>
-        <Text></Text>
-            <Text style={globalStyles.title}> {ResponseJSON[1].character} </Text>
-            <Text style={globalStyles.title}> {ResponseJSON[2].character} </Text>
-            <Text style={globalStyles.title}> {ResponseJSON[3].character} </Text>
-            <Text style={globalStyles.title}> {ResponseJSON[4].character} </Text>
-            
-
+        <Text/>
+           <Button title={ResponseJSON[1].character}/> 
+           <Button title={ResponseJSON[2].character} /> 
+           <Button title={ResponseJSON[3].character} /> 
+           <Button title={ResponseJSON[4].character} /> 
+           <Button title='try again' onPress={sampleFunction(urlNaruto)}/>  
         </View>
        
     );

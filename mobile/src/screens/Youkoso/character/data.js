@@ -1,7 +1,7 @@
 export const pfps = [
     {
         name: "Undefined",
-        nick: " ",
+        id: " ",
         desc: " ",
         image: " "
     },

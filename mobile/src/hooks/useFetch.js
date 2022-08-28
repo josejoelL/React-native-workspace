@@ -50,6 +50,5 @@ export function useFetch (url) {
         return () => (shouldCancel = true);
 
     },  [])
-    console.log(state);
     return state;
 }
