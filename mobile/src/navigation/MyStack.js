@@ -1,6 +1,17 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from "../screens/Home";
 import Settings from "../screens/Settings";
+
+import Quiz1 from "../screens/Quiz1";
+import Quiz2 from "../screens/Quiz2";
+import Quiz3 from "../screens/Quiz3";
+import Quiz4 from "../screens/Quiz4";
+import Quiz5 from "../screens/Quiz5";
+import Quiz6 from "../screens/Quiz6";
+import Quiz7 from "../screens/Quiz7";
+import Quiz8 from "../screens/Quiz8";
+import Quiz9 from "../screens/Quiz9";
+import Quiz10 from "../screens/Quiz10";
 import Wiki from "../screens/Wiki";
 import Cote1 from "../screens/Youkoso/v1/Cote1";
 
@@ -165,6 +176,29 @@ export default function MyStack() {
                 <HomeStack.Screen name='YukimuraTeruhiko' component={YukimuraTeruhiko} options={{ headerBackTitleVisible: true, headerTitle: "ADVANCED NURTURING HIGH SHOOL DATABASE  " }} />
 
             </HomeStack.Group>
+
+            <HomeStack.Group
+             screenOptions={{ 
+                headerShown: true,
+                gestureEnabled: false,
+                //animationEnabled: false,
+                    presentation: "transparentModal",
+                    animationTypeForReplace: 'push',
+             }}
+               
+               >
+               <HomeStack.Screen name='Quiz1' component={Quiz1} options={{ headerBackTitleVisible: false, headerTitle: " "  }} /> 
+               <HomeStack.Screen name='Quiz2' component={Quiz2} options={{ headerBackTitleVisible: false, headerTitle: " "  }} />
+               <HomeStack.Screen name='Quiz3' component={Quiz3} options={{ headerBackTitleVisible: false, headerTitle: " "  }} />
+               <HomeStack.Screen name='Quiz4' component={Quiz4} options={{ headerBackTitleVisible: false, headerTitle: " "  }} />
+               <HomeStack.Screen name='Quiz5' component={Quiz5} options={{ headerBackTitleVisible: false, headerTitle: " "  }} />
+               <HomeStack.Screen name='Quiz6' component={Quiz6} options={{ headerBackTitleVisible: false, headerTitle: " "  }} />
+               <HomeStack.Screen name='Quiz7' component={Quiz7} options={{ headerBackTitleVisible: false, headerTitle: " "  }} />
+               <HomeStack.Screen name='Quiz8' component={Quiz8} options={{ headerBackTitleVisible: false, headerTitle: " "  }} />
+               <HomeStack.Screen name='Quiz9' component={Quiz9} options={{ headerBackTitleVisible: false, headerTitle: " "  }} />
+               <HomeStack.Screen name='Quiz10' component={Quiz10} options={{ headerBackTitleVisible: false, headerTitle: " "  }} />
+            </HomeStack.Group>
+            
         </HomeStack.Navigator>
          
     );
