@@ -5,25 +5,19 @@ import { ContinueButton, getQuotes, animechan } from '../constants/Quiz';
 import { ScrollView } from 'react-native-gesture-handler';
 import { T } from '../constants/Texts';
 
-export function quote (text) {
-    
-}
 
 export default function Quiz1() {
   
     const { isLoading, error, ResponseJSON } = getQuotes();
 
-    const { quote, setQuote,
-        quote1, setQuote1,
-        quote2, setQuote2,
-        quote3, setQuote3,
+    const { quote, setQuote,    
     } = React.useContext(animechan);
     
 
     if (isLoading) return <T e='Loading...' />;
-    if (error) return <T e='Server saturated: play in other hour ' />;
-
-    setQuote(ResponseJSON[1].quote) ;
+    if (error) return <T e='Server saturated: play in other hour '/>;
+    let quiz = JSON.parse(JSON.stringify(ResponseJSON))
+    setQuote(quiz[1].quote);
 
     return (
         <View style={globalStyles.ScreenContainer} >

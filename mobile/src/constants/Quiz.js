@@ -137,18 +137,7 @@ export const getQuotes = () => {
         isLoading,
     }
 */
- const quotes = [
-    {
-        anime: "Naruto",
-        character: "Naruto Uzumaki",
-        quote: "si sirvo"
-    },
-    {
-        anime: "Naruto",
-        character: "saske",
-        quote: "No sirvo"
-    },
- ];
+ 
 const animechan = React.createContext();
 
 const QuoteProvider = ({children}) => {
