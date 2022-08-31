@@ -12,7 +12,7 @@ export const ContinueButton = (props) => {
     const { id } = props;
     const onPress = () =>{
         navigation.navigate(id);
-         console.log('Se puede');
+        
 
 
         }; 
@@ -141,18 +141,57 @@ export const getQuotes = () => {
 const animechan = React.createContext();
 
 const QuoteProvider = ({children}) => {
+  
 
-    const [quote, setQuote] = React.useState("quote not found");
+   
     const [quote1, setQuote1] = React.useState("quote not found");
     const [quote2, setQuote2] = React.useState("quote not found");
     const [quote3, setQuote3] = React.useState("quote not found");
+    const [quote4, setQuote4] = React.useState("quote not found");
+    const [quote5, setQuote5] = React.useState("quote not found");
+    const [quote6, setQuote6] = React.useState("quote not found");
+    const [quote7, setQuote7] = React.useState("quote not found");
+    const [quote8, setQuote8] = React.useState("quote not found");
+    const [quote9, setQuote9] = React.useState("quote not found");
+    const [quote10, setQuote10] = React.useState("quote not found");
+
+
+    const [character1, setCharacter1] = React.useState("Character not found");
+    const [character2, setCharacter2] = React.useState("Character not found");
+    const [character3, setCharacter3] = React.useState("Character not found");
+    const [character4, setCharacter4] = React.useState("Character not found");
+    const [character5, setCharacter5] = React.useState("Character not found");
+    const [character6, setCharacter6] = React.useState("Character not found");
+    const [character7, setCharacter7] = React.useState("Character not found");
+    const [character8, setCharacter8] = React.useState("Character not found");
+    const [character9, setCharacter9] = React.useState("Character not found");
+    const [character10, setCharacter10] = React.useState("Character not found");
         
     return(
         <animechan.Provider value={{
-            quote, setQuote,
+           
             quote1, setQuote1,
             quote2, setQuote2,
             quote3, setQuote3,
+            quote4, setQuote4,
+            quote5, setQuote5,
+            quote6, setQuote6,
+            quote7, setQuote7,
+            quote8, setQuote8,
+            quote9, setQuote9,
+            quote10, setQuote10,
+            character1, setCharacter1,
+            character2, setCharacter2,
+            character3, setCharacter3,
+            character4, setCharacter4,
+            character5, setCharacter5,
+            character6, setCharacter6,
+            character7, setCharacter7,
+            character8, setCharacter8,
+            character9, setCharacter9,
+            character10, setCharacter10,
+
+
         }}>
             {children}
         </animechan.Provider>
