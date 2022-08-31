@@ -1,11 +1,32 @@
-import { View, Text } from 'react-native';
+import * as React from 'react';
+import { View, Text, ScrollView } from 'react-native';
 import { globalStyles } from '../styles/global';
-import { ContinueButton } from '../constants/Quiz';
+import { ContinueButton, animechan, getQuotes } from '../constants/Quiz';
+import { T } from '../constants/Texts';
+
+
+
 export default function Quiz2() {
+    //const { isLoading, error, ResponseJSON } = React.useContext(animechan);
+    const { quote, setQuote,
+            quote1, setQuote1,
+            quote2, setQuote2,
+            quote3, setQuote3,  
+        }  = React.useContext(animechan);
+    //if (isLoading) return <T e='Loading...' />;
+   // if (error) return <T e='wait in other hours...' />;
     return (
+        
         <View style={globalStyles.ScreenContainer} >
             <Text style={globalStyles.title}> Quiz2 </Text>
+            <ScrollView>
+                <Text style={globalStyles.title}> {quote} </Text>
+           
+            </ScrollView>
+
+
             <ContinueButton id="Quiz3" />
         </View>
+        
     );
-}
+}   // onPress={() => { checkCharacter1(character) }}  ></Button>

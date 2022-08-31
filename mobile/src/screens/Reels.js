@@ -9,25 +9,26 @@ export default function Reels() {
         <View style={globalStyles.ScreenContainer} >
             <Text style={globalStyles.title}> Quiz Naruto</Text>
             <TouchableOpacity style={{
-            backgroundColor: 'green',
-            padding:10,
-            marginTop: '20%',
-            width: '50%',
-            alignSelf: 'center',
-            borderRadius: '5px',
-            }}
+                backgroundColor: 'green',
+                padding:10,
+                marginTop: '20%',
+                width: '50%',
+                alignSelf: 'center',
+                borderRadius: '5px',
+                }}
 
-            onPress={() => navigation.navigate('Quiz1')}>
+                onPress={() => navigation.navigate('Quiz1')}
+                >
 
                 <Text style={{
                     
                     fontSize: 20,
                     color: 'white',
                     textAlign: 'center',
-                   
+                
                     fontWeight: "bold",
                 }}>Play</Text>
-                </TouchableOpacity>
+            </TouchableOpacity>
         </View>
     );
 }
