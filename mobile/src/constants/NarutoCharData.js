@@ -1,6 +1,26 @@
 export const characters = [
     {
+        name: "Hinata Hyuga",
+        image: " "
+    },
+    {
+        name: "Itachi Uchiha",
+        image: " "
+    },
+    {
+        name: "Kakashi Hatake",
+        image: " "
+    },
+    {
+        name: "Gaara",
+        image: " "
+    },
+    {
         name: "Naruto Uzumaki",
+        image: " "
+    },
+    {
+        name: "Tsunade",
         image: " "
     },
     {
@@ -12,23 +32,7 @@ export const characters = [
         image: " "
     },
     {
-        name: "Kakashi Hatake",
-        image: " "
-    },
-    {
-        name: "Maito Gai",
-        image: " "
-    },
-    {
-        name: "Rock Lee",
-        image: " "
-    },
-    {
-        name: "Hinata Hyuga",
-        image: " "
-    },
-    {
-        name: "Shikamaru Nara",
+        name: "Konan",
         image: " "
     },
     {
@@ -36,11 +40,15 @@ export const characters = [
         image: " "
     },
     {
-        name: "Neji Hyuga",
+        name: "Anko Mitarashi",
         image: " "
     },
     {
-        name: "Asuma Sarutobi",
+        name: "Kushina Uzumaki",
+        image: " "
+    },
+    {
+        name: "Minato Namikaze",
         image: " "
     },
     {
@@ -48,7 +56,31 @@ export const characters = [
         image: " "
     },
     {
-        name: "Gaara",
+        name: "Shikamaru Nara",
+        image: " "
+    },
+    {
+        name: "Kurenai Yuhi",
+        image: " "
+    },
+    {
+        name: "Neji Hyuga",
+        image: " "
+    },
+    {
+        name: "Mei Terumi",
+        image: " "
+    },
+    {
+        name: "Sasori",
+        image: " "
+    },
+    {
+        name: "Jiraiya",
+        image: " "
+    },
+    {
+        name: "Kiba Inuzuka",
         image: " "
     },
     {
@@ -65,10 +97,6 @@ export const characters = [
     },
     {
         name: "Iruka Umino",
-        image: " "
-    },
-    {
-        name: "Itachi Uchiha",
         image: " "
     },
     {
