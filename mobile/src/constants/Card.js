@@ -16,3 +16,19 @@ export const Card = (props) => {
         </View>
     );
 }
+
+export const RadioButton = (props) => {
+
+    const { data, onSelect } = props;
+
+    return (
+        <View style={{flex: 1, }}>
+            
+            <Text >{data[0].value}</Text>
+            <Text >{data[1].value}</Text>
+            <Text >{data[2].value}</Text>
+            <Text >{data[3].value}</Text>
+
+        </View>
+    );
+}

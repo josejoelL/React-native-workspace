@@ -4,7 +4,8 @@ import { globalStyles } from '../styles/global';
 import { ContinueButton, animechan } from '../constants/Quiz';
 import { T } from '../constants/Texts';
 
-
+import { getRandomCharacters } from '../constants/CharacterRandom';
+import { RadioButton } from '../constants/Card';
 export default function Quiz3() {
     
     const { quote, setQuote,
@@ -14,6 +15,14 @@ export default function Quiz3() {
         character2, character3
     } = React.useContext(animechan);
     
+    const data = [
+        {  value: getRandomCharacters() },
+        {  value: getRandomCharacters() },
+        { value: character3 },
+        {  value: getRandomCharacters() },
+    ];
+
+
     return (
 
         <View style={globalStyles.ScreenContainer} >
@@ -22,9 +31,11 @@ export default function Quiz3() {
 
                 <Text style={globalStyles.title}> {quote3} </Text>
                 <Text style={globalStyles.title}> {character3} </Text>
+            <RadioButton data={data} />
             </ScrollView>
 
 
+            
             <ContinueButton id="Quiz4" />
         </View>
 
