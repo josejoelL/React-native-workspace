@@ -8,8 +8,9 @@ function getRandomInt(max) {
 }
 
 export const getRandomCharacters = () => {
+    let random = getRandomInt(56);
 
-    
-
-    return characters.map(getRandom()); 
-} 
+    let p = characters.find(x => random == x.id );
+    console.log(p);
+    return p.name;
+} // characters.map(getRandomInt(characters.length)); 

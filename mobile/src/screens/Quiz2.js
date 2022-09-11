@@ -3,9 +3,11 @@ import { View, Text, ScrollView } from 'react-native';
 import { globalStyles } from '../styles/global';
 import { ContinueButton, animechan } from '../constants/Quiz';
 import { T } from '../constants/Texts';
-
-
-
+//the creathor of the api suggest to do an app where you need to adivinate the character
+//just with letters and the past of time give tips, 
+// i want to do something like duolingo the radio button
+// the soup of letters 
+import { getRandomCharacters } from '../constants/CharacterRandom';
 export default function Quiz2() {
     //const { isLoading, error, ResponseJSON } = React.useContext(animechan);
     const { quote, setQuote,
@@ -20,10 +22,15 @@ export default function Quiz2() {
         
         <View style={globalStyles.ScreenContainer} >
             <Text style={globalStyles.title}> Quiz2 </Text>
+            <Text></Text>
             <ScrollView>
                 
                 <Text style={globalStyles.title}> {quote2} </Text>
+                <Text></Text>
                 <Text style={globalStyles.title}> {character2} </Text>
+                <Text style={globalStyles.title}> {getRandomCharacters()} </Text>
+                <Text style={globalStyles.title}> {getRandomCharacters()} </Text>
+                <Text style={globalStyles.title}> {getRandomCharacters()} </Text>
             </ScrollView>
 
 
