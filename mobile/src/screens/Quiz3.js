@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { globalStyles } from '../styles/global';
 import { ContinueButton, animechan } from '../constants/Quiz';
@@ -12,31 +13,44 @@ export default function Quiz3() {
         quote1, setQuote1,
         quote2, setQuote2,
         quote3, setQuote3,
-        character2, character3
+        character2, character3,
+    
     } = React.useContext(animechan);
     
-    const data = [
-        {  value: getRandomCharacters() },
-        {  value: getRandomCharacters() },
-        { value: character3 },
-        {  value: getRandomCharacters() },
+    
+    let v1 = getRandomCharacters();
+    let v2 = getRandomCharacters();
+    let v3 = character3;
+    let v4 = getRandomCharacters();
+   
+    const [option, setOption] = useState(null);
+ const data = [
+        { id:0, value: v1 },
+        { id: 1, value: v2 },
+        { id: 2, value: v3 },
+        { id: 3, value: v4 },
     ];
-
-
     return (
 
         <View style={globalStyles.ScreenContainer} >
-            <Text style={globalStyles.title}> Quiz3 </Text>
-            <ScrollView>
+            <View style={{ flex: 2 }}  > 
+                <Text style={globalStyles.title}> Quiz3 </Text>
+                <ScrollView>
 
-                <Text style={globalStyles.title}> {quote3} </Text>
-                <Text style={globalStyles.title}> {character3} </Text>
-            <RadioButton data={data} />
-            </ScrollView>
-
-
+                    <Text style={globalStyles.title}> {quote3} </Text>
+                 
             
-            <ContinueButton id="Quiz4" />
+                </ScrollView>
+            </View>
+        
+            <View style={{ flex: 2 , flexDirection: 'row' }}  > 
+              
+                <RadioButton data={data}  />
+               
+            </View>
+           
+           <ContinueButton id="Quiz4" />
+           <Text/>
         </View>
 
     );

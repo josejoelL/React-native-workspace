@@ -1,10 +1,10 @@
-
-import { StyleSheet, Text, View, Image, SafeAreaView, ScrollView, Platform } from 'react-native';
+import { useState } from 'react';
+import { StyleSheet, Text, View, Image, SafeAreaView, ScrollView, Platform, Pressable } from 'react-native';
 
 export const Card = (props) => {
 
     const { name, desc, image, width, height } = props;
-
+   
     return (
         <View style={{ width: 350, height: 526, backgroundColor: 'white', padding: 10, borderRadius: 30, marginBottom: 30 }}>
             <Image
@@ -18,17 +18,47 @@ export const Card = (props) => {
 }
 
 export const RadioButton = (props) => {
-
+    const [userOption, setUserOption] = useState(null);
     const { data, onSelect } = props;
-
+    const item = data;
+  
     return (
-        <View style={{flex: 1, }}>
-            
-            <Text >{data[0].value}</Text>
-            <Text >{data[1].value}</Text>
-            <Text >{data[2].value}</Text>
-            <Text >{data[3].value}</Text>
-
+        <View style={{flex: 1 }}>
+            {item.map((item) => {
+                return (
+                    <Pressable
+                        style={ //Line 5
+                            item.value === userOption ? styles.selected : styles.unselected
+                        } /*Add style here */ //Line 7
+                        key={item.id} 
+                        onPress={() => setUserOption(item.value)}>
+                        <Text style={styles.option}> {item.value}</Text>
+                    </Pressable>
+                );
+            })}
+         
         </View>
     );
 }
+
+const styles = StyleSheet.create({
+    option: {
+        fontSize: 20,
+        color: 'white',
+        textAlign: 'center',
+        
+    },
+    unselected: {
+        backgroundColor: 'darkgrey',
+        margin: 6,
+        padding: 10,
+        borderRadius: 10,
+    },
+    selected: {
+        backgroundColor: 'green',
+        margin: 6,
+        padding: 10,
+        borderRadius: 10,
+    },
+});
+export default styles;

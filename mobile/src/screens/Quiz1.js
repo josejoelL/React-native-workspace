@@ -23,6 +23,9 @@ export default function Quiz1() {
         character1, setCharacter1,
         character2, setCharacter2,
         character3, setCharacter3,
+
+       
+
         character4, setCharacter4,
         character5, setCharacter5,
         character6, setCharacter6,
@@ -51,7 +54,13 @@ export default function Quiz1() {
     setCharacter1(quiz[0].character);
     setCharacter2( quiz[1].character);
     setCharacter3( quiz[2].character);
+
     setCharacter4(quiz[3].character);
+
+
+
+
+
     setCharacter5( quiz[4].character);
     setCharacter6( quiz[5].character);
     setCharacter7( quiz[6].character);

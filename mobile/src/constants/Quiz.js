@@ -159,6 +159,7 @@ const QuoteProvider = ({children}) => {
     const [character1, setCharacter1] = React.useState("Character not found");
     const [character2, setCharacter2] = React.useState("Character not found");
     const [character3, setCharacter3] = React.useState("Character not found");
+
     const [character4, setCharacter4] = React.useState("Character not found");
     const [character5, setCharacter5] = React.useState("Character not found");
     const [character6, setCharacter6] = React.useState("Character not found");
@@ -183,6 +184,7 @@ const QuoteProvider = ({children}) => {
             character1, setCharacter1,
             character2, setCharacter2,
             character3, setCharacter3,
+            
             character4, setCharacter4,
             character5, setCharacter5,
             character6, setCharacter6,
